@@ -5,7 +5,7 @@
         private $Operando1;
         private $Operando2;
 
-        public function __construct($Operando1, $Operando2)
+        public function __construct($op1, $op2)
         {
             $this->Operando1 = $op1;
             $this->Operando2 = $op2;
@@ -20,7 +20,7 @@
             return($this->Operando1);
         }
 
-        public function setOperando2($valor)
+        public function setOperando1($valor)
         {
             $this->Operando1=$valor;
         }
@@ -37,13 +37,13 @@
 
         public function __set($propiedad,$valor)
         {
-            echo("<p>La propiedad que intenta modificar no existe</p>");
+            echo "<p>La propiedad que intenta modificar no existe</p>";
         }
 
         public function __get($propiedad)
         {
             echo("<p>La propiedad de la que intenta");
-            echo("obtener el valor no existe</p>")
+            echo("obtener el valor no existe</p>");
         }
 
         public function Suma()
